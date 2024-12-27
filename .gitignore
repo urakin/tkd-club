@@ -2,3 +2,4 @@
 /venv/
 /.idea/
 /db/club.db
+config.yaml

@@ -1,5 +1,7 @@
-Flask
+Flask~=3.1.0
 Flask-SQLAlchemy
 Flask-WTF
 Flask-Login
 gunicorn
+wtforms~=3.2.1
+werkzeug~=3.1.3
