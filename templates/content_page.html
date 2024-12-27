@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ title }} - Клуб Тхэквондо "Патриот"{% endblock %}
+
+{% block content %}
+    <h1>{{ title }}</h1>
+    <div>
+        {% for material in materials %}
+            <h2>{{ material.title }}</h2>
+            <p>{{ material.content }}</p>
+            <img src="{{ url_for('static', filename='uploads/' + material.image) }}" alt="{{ material.title }}">
+        {% endfor %}
+    </div>
+{% endblock %}
