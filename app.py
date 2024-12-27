@@ -80,6 +80,7 @@ def add_material():
     return render_template('add_material.html', form=form)
 
 
+@app.route("/")
 @app.route("/home")
 def home():
     materials = Material.query.filter_by(category='Главная').all()
